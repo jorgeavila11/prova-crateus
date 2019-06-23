@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>    
+      <header>
+        <h1>Sistema de inscrição para bolsas</h1>    
+      <header>
+    <fieldset>
+        <h2>Seus Dados</h2>
+    
+            <form method="POST" action="php/cadastrar.php">
+            <div class="campo">
+                <p>
+                    <label for="Inome" >Seu Nome</label>
+                    <input id="Inome" name="nome" type="text" placeholder="Nome e Sobrenome">       
+                </p>
+                <p>
+                    <label for="Icpf" >CPF</label>
+                    <input id="Icpf" name="CPF" type="text" placeholder="000.000.000-00">       
+                </p>
+                <p>
+                    <label for="Iemail" >E-mail</label>
+                    <input id="Iemail" name="e-mail" type="e-mail" placeholder="exemplo@ecemplo.com">       
+                </p>
+                <p>
+                    <label for="Idatanasc" >Data de Nascimento</label>           
+                    <input id="Idatanasc" name="data_nascimanto" type="date" placeholder="dd/mm/aaaa">
+                </p>
+            </div> 
+            <p>
+                <label for="Iarquivo" >Curriculu Vitae</label> 
+                <input id="Iarquivo" type="file" name="arquivo" >
+            </p>
+
+            </p>            
+                Sexo
+            </p>        
+            <p>
+                <input id="Iradio" name="radio" type="radio" >Masculino <br>
+                <input id="Iradio" name="radio" type="radio" >Feminino <br>
+                <input id="Iradio" name="radio" type="radio" >Não deseja informar <br>
+            </p>
+            <h2>Escolha seu orientador </h2>
+            <p>
+                <label for="Idatanasc" >Linha de Pesquisa</label>
+                <input id="Idatanasc" name="data_nascimanto" type="">       
+            </p>
+            <p>
+                <label for="Idatanasc" >Orientador</label>
+                <input id="Idatanasc" name="data_nascimanto" type="">       
+            </p>
+            <input type="submit" value="CADASTRAR">
+
+        </form>
+    </fieldset>  
+</body>
+</html>
